@@ -1,0 +1,32 @@
+body
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top left,rgb(234, 234, 118),rgb(147, 234, 147),rgb(118, 185, 227));
+    background-repeat: no-repeat;
+    height: 97vh;
+}
+h2
+{
+    overflow: hidden; /*Ensures the content is not revealed until the animation */
+  border-right: 5px solid black; /* The typwriter cursor */
+  white-space: nowrap;/* Keeps the content on a single line */
+  margin: 0 auto;
+  animation: typing 5s steps(30,end), blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+    from{width: 0%;}
+    to{width: 10%;}
+}
+@keyframes blink-caret {
+    from,
+    to{
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }

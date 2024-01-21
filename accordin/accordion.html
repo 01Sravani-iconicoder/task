@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Interview</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2IBju4JwauBJH84IiUNG7QRaev14jJE_rS78Rx8wWLwv3ci_haLIEZvx_O6iPeAIDH4&usqp=CAU" type="image/x-icon">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./accordion.css">
+</head>
+<body>
+    <header>
+        <h1>JS Interview Questions</h1>
+        <button><i class="fa-solid fa-gear" onclick="dark()"></i></button>
+    </header>
+    <main>
+    <div class="accordion">
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>1.What is JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓JavaScript is a high-level, interpreted programming language that is primarily used for building interactive and dynamic web pages.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>2.What are the key features of JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Dynamic typing, prototype-based object-orientation, first-class functions, and closures.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>3.What is the DOM (Document Object Model)?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The DOM is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each object corresponds to a part of the document.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>4.Explain the difference between let, var, and const.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓var is function-scoped, let and const are block-scoped. const is used for constant values that cannot be reassigned, while let allows reassignment.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>5.What is closure?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓A closure is a function that has access to variables from its outer (enclosing) scope, even after the outer function has finished execution.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>6.What is the difference between == and === in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓== checks for equality after type coercion, while === checks for equality without type coercion (strict equality).</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>7.Explain the event bubbling and capturing in JavaScript.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Event bubbling refers to the order in which events are propagated from the target element up to the root, while event capturing is the reverse, going from the root to the target element.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>8.What is the purpose of this keyword in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓this refers to the current execution context in which a function is invoked. Its value depends on how a function is called (e.g., method invocation, constructor invocation, etc.).</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>9.What is a callback function?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓A callback function is a function passed as an argument to another function, which will be invoked later when a specific event occurs or a condition is met.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>10.Explain asynchronous programming in JavaScript.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Asynchronous programming in JavaScript involves handling operations that might take some time to complete without blocking the execution. It typically uses callbacks, promises, or async/await syntax.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>11.What is the purpose of JSON in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓JSON (JavaScript Object Notation) is a lightweight data interchange format. It is used for data serialization and is easy for humans to read and write and easy for machines to parse and generate.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>12.Explain the concept of hoisting in JavaScript.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>13.What are arrow functions in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Arrow functions are a concise way to write function expressions in JavaScript. They have a shorter syntax and lexically bind the this value.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>14.What is the purpose of the async and await keywords?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓async is used to define asynchronous functions, and await is used to wait for a promise to resolve before proceeding to the next line of code. They are part of the async/await syntax for handling asynchronous operations.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>15.What is the difference between null and undefined in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓null is an assignment value that represents no value or no object, while undefined is a variable that has been declared but not assigned a value.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>16.What is the purpose of the try, catch, and finally blocks in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓These blocks are used for exception handling. The try block contains the code that might throw an exception, the catch block contains code to handle the exception, and the finally block contains code that will be executed regardless of whether an exception was thrown or not.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>17.How does prototypal inheritance work in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓JavaScript uses prototypal inheritance, where objects can inherit properties and methods from other objects through a prototype chain.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>18.What is the Event Loop in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The Event Loop is a core concept in JavaScript that allows the execution of asynchronous tasks. It continuously checks the call stack and task queue, moving tasks from the queue to the stack when the stack is empty.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>19.What are the differences between let and const?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓let allows variable reassignment, while const does not. Variables declared with const must be assigned a value when declared and cannot be reassigned.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>20.Explain the concept of CORS (Cross-Origin Resource Sharing).</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓CORS is a security feature implemented by web browsers to control access to resources on a different origin. It prevents web pages from making requests to a different domain than the one that served the web page.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>21.What is the difference between let and var in terms of scope?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓var is function-scoped, while let is block-scoped. Variables declared with var are hoisted to the top of their function scope, while let is hoisted to the top of its block scope.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>22.How does the map function work in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The map function is used to create a new array by applying a provided function to each element in the original array. It does not mutate the original array.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>23.What is the purpose of the bind method in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The bind method is used to create a new function with a specified this value and initial arguments. It allows you to explicitly set the context in which a function is called.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>24.What is the difference between synchronous and asynchronous programming?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Synchronous programming executes tasks sequentially, while asynchronous programming allows tasks to be executed independently, often using mechanisms like callbacks, promises, or async/await.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>25.Explain the concept of the Same-Origin Policy.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The Same-Origin Policy is a security feature implemented by web browsers to restrict web pages from making requests to a different domain than the one that served the web page. This helps prevent malicious actions such as cross-site request forgery.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>26.How do you handle errors in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Errors in JavaScript can be handled using try-catch blocks, where potentially error-prone code is placed in the try block, and any caught exceptions are handled in the catch block.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>27.What is a closure, and can you provide an example where closures are useful?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓A closure is a function that retains access to variables from its outer (enclosing) scope. Closures are useful for creating private variables and implementing the module pattern.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>28.How does the this keyword behave in arrow functions compared to regular functions?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Arrow functions do not have their own this context; instead, they inherit this from the enclosing scope. Regular functions, on the other hand, have their own this context.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>29.What is the purpose of the Promise object in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The Promise object is used for asynchronous programming. It represents a value that might be available now, or in the future, or never. Promises help handle asynchronous operations in a more readable and manageable way.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>30.Explain the concept of debouncing in JavaScript.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Debouncing is a programming practice used to ensure that time-consuming tasks do not fire so often, making them more efficient. It is often used in scenarios such as handling user input to delay the execution of a function until after a certain period of inactivity.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>31.What is the purpose of the spread operator (...) in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The spread operator is used to unpack elements from an array or properties from an object. It provides a concise way to copy arrays, concatenate arrays, and create shallow copies of objects.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>32.Explain the concept of Event Delegation.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Event delegation is a technique where a single event listener is attached to a common ancestor instead of individual elements. It takes advantage of event bubbling, allowing you to handle events for multiple elements efficiently.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>33.How does the localStorage differ from sessionStorage in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Both localStorage and sessionStorage are web storage options for storing data on the client side. The key difference is that data stored in localStorage persists even after the browser is closed and reopened, while data in sessionStorage is only available for the duration of the page session.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>34.What is the Event Loop in Node.js?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The Event Loop in Node.js is a mechanism that allows Node.js to perform non-blocking I/O operations, making it highly scalable. It enables handling multiple connections simultaneously without the need for multi-threading.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>35.Explain the concept of the Prototype Chain in JavaScript.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The Prototype Chain is a mechanism by which objects in JavaScript inherit properties and methods from other objects. Each object has an associated prototype object, forming a chain that ends with the Object.prototype at the top.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>36.How does the async function differ from a regular function in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓An async function always returns a promise and allows the use of the await keyword to pause execution until a promise is resolved. It simplifies asynchronous code and makes it appear more like synchronous code.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>37.What is the purpose of the fetch API in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The fetch API is used to make network requests in JavaScript. It provides a more modern and flexible alternative to the older XMLHttpRequest and is commonly used for fetching data from a server.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>38.How does event handling work in JavaScript, and what are event listeners?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Event handling involves responding to user actions or browser events. Event listeners are functions that are invoked when a specified event occurs, allowing you to define custom behavior for different events.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>39.What are closures, and how are they useful in JavaScript? Can you provide an example?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Closures are functions that have access to variables from their outer (enclosing) scope, even after the outer function has finished executing. They are useful for creating private variables and maintaining state across function calls.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>40.How does the call and apply methods work in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Both call and apply are methods that allow you to invoke a function with a specified this value and arguments. The difference is in how arguments are passed: call takes individual arguments, while apply takes an array of arguments.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>41.Explain the concept of callback hell and how it can be mitigated.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Callback hell, also known as the "pyramid of doom," occurs when multiple nested callbacks make the code difficult to read and maintain. It can be mitigated using techniques like named functions, modularization, and promises or async/await syntax.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>42.What is the difference between the window and document objects in the browser's JavaScript environment?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The window object represents the global browser window and includes properties like document, location, and others. The document object, on the other hand, represents the HTML document and provides methods to manipulate its content.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>43.What are the key features introduced in ES6 (ECMAScript 2015)?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓ES6 introduced several features, including arrow functions, let and const declarations, template literals, destructuring assignment, classes, and the spread/rest operators.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>44.What is the purpose of the bind method in JavaScript, and how does it work?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The bind method is used to create a new function with a specified this value. It does not invoke the function immediately but allows you to create a partially applied function with a specific context.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>45.Explain the concept of promises in JavaScript and how they help with asynchronous programming.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Promises represent a value that might be available now, in the future, or never. They help with asynchronous programming by providing a cleaner way to handle and chain asynchronous operations, avoiding callback hell.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>46.What is the significance of the async and defer attributes in a script tag?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The async attribute tells the browser to execute the script asynchronously while the HTML document continues to be parsed. The defer attribute, on the other hand, defers script execution until after the HTML document is fully parsed.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>47.Explain the difference between function declarations and function expressions in JavaScript.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Function declarations are hoisted and can be called before they are defined, while function expressions are not hoisted. Function expressions can be assigned to variables and passed as arguments to other functions.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>48.What is the purpose of the use strict directive in JavaScript, and how does it affect the behavior of code?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The use strict directive enables strict mode in JavaScript, which helps catch common coding errors, prevents the use of certain error-prone features, and enhances security.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>49.What are the different ways to create objects in JavaScript, and what are their advantages and disadvantages?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Objects in JavaScript can be created using object literals, constructor functions with the new keyword, and the Object.create() method. Each approach has its own benefits and use cases.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>50.How does the event delegation pattern work, and what are its advantages?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Event delegation involves attaching a single event listener to a common ancestor, allowing you to handle events for multiple elements efficiently. It improves performance and simplifies event management in dynamic UIs.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>51.What is the purpose of the setTimeout function in JavaScript, and how does it work?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓setTimeout is used to schedule the execution of a function or code snippet after a specified delay (in milliseconds). It operates asynchronously and adds the function to the callback queue after the specified time.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>52.What is the difference between the for...in and for...of loops in JavaScript?</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓for...in is used to iterate over the enumerable properties of an object, while for...of is used to iterate over iterable objects such as arrays, strings, and other collections.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>53.Explain the concept of memoization and how it can be implemented in JavaScript.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓Memoization is a technique to optimize function calls by caching the results of expensive function calls and returning the cached result when the same inputs occur again. It is often used to improve performance in recursive or computationally expensive functions.</p>
+            </div>
+        </div>
+        <div class="accordion-items">
+            <div class="accordion-header">
+                <h2>54.Explain the concept of the Single Responsibility Principle in the context of object-oriented programming.</h2> <i class="fa-sharp fa-solid fa-plus"></i>   
+            </div>
+            <div class="accordion-content">
+                <p>👩‍🎓The Single Responsibility Principle (SRP) states that a class should have only one reason to change, meaning it should only have one responsibility. This helps in creating more maintainable and modular code.</p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer><h2>Done By Sravani Javvaji</h2></footer>
+    <script src="./accordion.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top left,rgb(234, 234, 118),rgb(147, 234, 147),rgb(118, 185, 227));
+    background-repeat: no-repeat;
+    height: 97vh;
+}
+fieldset
+{
+    height: 300px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+input
+{
+    height: 25px;
+    width: 300px;
+}
+input:active
+{
+    border: 1px solid black;
+}
+button
+{
+    height: 40px;
+    width: 100px;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: rgb(0, 255, 200);
+    box-shadow: 5px 5px 10px black;
+}
+button:active
+{
+    box-shadow: none;
+}

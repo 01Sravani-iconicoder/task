@@ -1,0 +1,81 @@
+body
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px 100px;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    width: 97vw;
+    top: 0;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    position: sticky;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+header h1
+{
+    margin-left: 500px;
+    font-size: 35px;
+}
+header button
+{
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+    border-radius: 20px;
+    background-image: linear-gradient(black,white);
+}
+.accordion-items
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 0px;
+}
+.accordion-header
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 0px 20px;
+}
+.accordion-header:hover
+{
+    background-color: rgb(99, 94, 94);
+}
+.accordion-header i
+{
+    font-size: 25px;
+}
+.accordion-content
+{
+    display: none;
+    font-size: 20px;
+    padding: 0px 20px;
+    scroll-behavior: smooth;
+    transition: max-height 2s ease-out;
+}
+.accordion-content:hover
+{
+    background-color: white;
+    color: black;
+}
+.dark
+{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}

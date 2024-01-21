@@ -1,0 +1,80 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/017/457/394/small/simple-background-with-gradient-shape-green-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.head
+{
+    font-size: 30px;
+}
+#openModalBtn
+{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+#openModalBtn:active
+{
+    box-shadow: none;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+  }
+  
+  /* Style the modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Style the close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .login a
+  {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+  }
+  .login
+  {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  }
+  .login:active
+  {
+    box-shadow: none;
+  }

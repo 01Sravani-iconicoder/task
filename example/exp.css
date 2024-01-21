@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .slider {
+    display: flex;
+    width: 89vw;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+  }
+
+  
+  a.prev, a.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  
+  a.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  a.prev:hover, a.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
